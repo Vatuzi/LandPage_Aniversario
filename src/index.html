@@ -1,13 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="scripts/app.js"></script>
 </head>
 <body>
-    
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logo.png" alt="">
+            <p class="hero__text">
+                Karol 2.9: uma nova temporada!! <br> <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Signo</b>
+                        Escorpião
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Qualidade</b>
+                        Intensa
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Defeito</b>
+                        E tem???
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Um sonho</b>
+                        Viajar o mundo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Frase mais falada</b>
+                        Teu cú
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Deixe Um Recado
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Viva a Noite! Viva! Viva!</h2>
+                <p class="event__details_description">
+                    Desde muito jovem, sempre acreditei que cada momento da vida merece ser celebrado. Para mim, comemorar não é só marcar uma data ou evento, mas também valorizar as pequenas vitórias, as conquistas do dia a dia e aqueles instantes que parecem simples, mas fazem toda a diferença. <br><br>
+
+                    Hoje, ao chegar aos 29 anos, esse pensamento se fortalece ainda mais. Olho para trás e vejo como cada comemoração, cada momento vivido, me trouxe até aqui. São essas celebrações que dão cor à nossa história e nos fazem perceber o quão preciosa é a vida. <br><br> Com essa convicção e com o coração cheio de gratidão, quero compartilhar essa fase tão especial com as pessoas que estiveram ao meu lado em cada um desses capítulos, celebrando esse marco ao lado de quem realmente importa.
+                    
+                    Esse texto reflete o sentimento de gratidão e a alegria de celebrar com mais profundidade, mantendo o tom pessoal e acolhedor.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Deixe seu carinho em forma de presente! 🎉🎉</h2>
+                <p class="event__details_description">               
+                    Para quem gostaria de deixar um mimo especial ao aniversariante, disponibilizamos uma forma prática e segura: o Pix! Com um simples toque, você pode fazer sua contribuição e deixar seu carinho registrado de uma maneira que ele nunca vai esquecer. <br><br>
+                    Cada detalhe importa, e estamos certos de que sua lembrança tornará esse momento ainda mais especial.<br><br>
+
+                    Chave Pix: [Insira aqui a chave Pix]<br><br><br>
+
+                    Agradecemos por fazer parte desta celebração!    
+                </p>
+            </div>
+            <img class="event__image" src="./images/presentes.png" alt="ui-ux">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatibus cumque doloremque est facilis aut earum aliquam sequi velit rem distinctio repellendus cum, maxime nemo possimus amet vel animi ab.
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__form">
+                <h2 class="event__form__title">Envie seu Recado ✍️</h2>
+                <p class="event__form_description">
+                    <form action="https://formsubmit.co/ajax/kerol.lima374@gmail.com" method="POST" data-form>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required />
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                        <textarea name="mensagem" id="mensagem" placeholder="Recadinho do coração!!" required></textarea>
+                        <button type="submit" data-button>Enviar</button>
+                    </form>
+                </p>
+            </div>
+            <img class="event__form__image" src="./images/flork.png" alt="Backend">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
