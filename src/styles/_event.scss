@@ -85,7 +85,7 @@
         textarea:hover,
         textarea:focus {
             outline: none;
-            border-color: #1d90f5;
+            border-color: variables.$blue3;
             box-shadow: 0 0 0 0.3125rem #26344a;
         }
 
@@ -101,15 +101,15 @@
         button {
             border: none;
             border-radius: 99px;
-            color: white;
-            background: #1d90f5;
+            color: variables.$textColor;
+            background: variables.$blue3;
             cursor: pointer;
             transition: 0.3s;
         }  
         button:hover,
         button:focus {
             outline: none;
-            background: #1c70d3;
+            background: variables.$blue4;
         }
 
         button:disabled {
