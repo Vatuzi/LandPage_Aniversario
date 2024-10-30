@@ -31,6 +31,7 @@
         max-width: 340px;
         &__momentos{
             max-width: 500px;
+            border-radius: 8%;
         }
     }
 
@@ -137,6 +138,9 @@
 
         &__image {
             width: 100%;
+            &__momentos{
+                width: 100%;
+            }
         }
 
         &__details {
